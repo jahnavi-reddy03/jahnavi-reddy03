@@ -6,7 +6,7 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/jahnavi-reddy03/jahnavi-reddy03/main/assets/mascot.svg" width="700"/>
+<img src="https://raw.githubusercontent.com/jahnavi-reddy03/jahnavi-reddy03/main/mascot.svg" width="700"/>
 
 <br/>
 
