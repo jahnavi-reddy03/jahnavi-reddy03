@@ -6,6 +6,10 @@
 
 <br/>
 
+<img src="https://raw.githubusercontent.com/jahnavi-reddy03/jahnavi-reddy03/main/assets/mascot.svg" width="700"/>
+
+<br/>
+
 <a href="https://www.linkedin.com/in/jahnavi-reddy8/"><img src="https://img.shields.io/badge/LINKEDIN-CONNECT-00F5FF?style=for-the-badge&logo=linkedin&logoColor=0D0221&labelColor=0D0221"/></a>
 <a href="mailto:kjahnavi.0803@gmail.com"><img src="https://img.shields.io/badge/EMAIL-TRANSMIT-FF2E9A?style=for-the-badge&logo=gmail&logoColor=0D0221&labelColor=0D0221"/></a>
 <a href="#-mission-files--featured-projects"><img src="https://img.shields.io/badge/PROJECTS-EXPLORE-7B2FFF?style=for-the-badge&logo=github&logoColor=ffffff&labelColor=0D0221"/></a>
