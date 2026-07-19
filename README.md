@@ -116,68 +116,6 @@ I like projects I can back up with evidence, not just a screenshot.
 
 ---
 
-## 🕹️ MISSION FILES — Featured Projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🔒 SECURITY THREAT INTELLIGENCE RAG
-**Status:** ✅ Deployed
-
-Cybersecurity assistant answering CVE and MITRE ATT&CK questions via Retrieval-Augmented Generation.
-
-**Stack:** `Python` `LangChain` `ChromaDB` `OpenAI GPT-3.5` `Streamlit`
-
-**Loadout:**
-- Full RAG pipeline: document ingestion → vector search → grounded LLM answers
-- Knowledge base covers Log4Shell, PrintNightmare, EternalBlue, and core MITRE ATT&CK techniques
-
-[▶ REPO](https://github.com/jahnavi-reddy03/ai-security-rag) · [▶ LIVE DEMO](https://ai-security-rag.streamlit.app)
-
-</td>
-<td width="50%" valign="top">
-
-### 💰 PERSONAL FINANCE MCP SERVER
-**Status:** ✅ Deployed
-
-MCP server giving Claude Desktop native financial analysis abilities — spending breakdowns, overspend flags, plain-English reports.
-
-**Stack:** `Python` `FastMCP` `Pandas` `OpenAI GPT-3.5` `Plaid API`
-
-**Loadout:**
-- 5 chained tools: spend analysis, 50/30/20 benchmark flagging, AI savings tips, report generation, live bank data via Plaid
-- Works on CSV exports or live transactions from 12,000+ banks
-
-[▶ REPO](https://github.com/jahnavi-reddy03/personal-finance-mcp)
-
-</td>
-</tr>
-<tr>
-<td width="100%" valign="top" colspan="2">
-
-### 📅 BUSINESS SCHEDULE
-**Status:** ✅ Complete · 🔒 Private Repo · 👥 Team Mission (4 players)
-
-Multi-user Java CLI scheduling app with role-based access, built for CSC 678.
-
-**Stack:** `Java` `JDBC` `MySQL`
-
-**Loadout:**
-- Create/edit/delete/publish schedules and events, with automatic conflict detection
-- Role-based access (Guest/Employee/Manager/Admin) with admin-controlled role changes
-- Hashed credential storage + inactivity-based auto-logout
-- Relational schema designed via ER diagrams, connected through JDBC
-
-**My contribution:** Diagnosed and fixed a critical MySQL/JDBC connection bug silently failing all DB read/writes; co-authored the security and admin-authorization test suite; contributed to schema design.
-
-> Private — available on request or via walkthrough in interviews.
-
-</td>
-</tr>
-</table>
-
----
 
 ## 🎖️ CERTIFICATIONS
 
@@ -203,8 +141,7 @@ Multi-user Java CLI scheduling app with role-based access, built for CSC 678.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=jahnavi-reddy03&show_icons=true&theme=synthwave&hide_border=true&count_private=true" width="49%"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=jahnavi-reddy03&theme=synthwave&hide_border=true" width="49%"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=jahnavi-reddy03&theme=synthwave&hide_border=true" width="60%"/>
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jahnavi-reddy03&layout=compact&theme=synthwave&hide_border=true&langs_count=8" width="49%"/>
 
