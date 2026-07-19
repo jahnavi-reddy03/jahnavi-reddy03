@@ -1,0 +1,94 @@
+<svg viewBox="0 0 800 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D0221"/>
+      <stop offset="100%" stop-color="#1a0a3a"/>
+    </linearGradient>
+    <linearGradient id="glow1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5FF"/>
+      <stop offset="50%" stop-color="#7B2FFF"/>
+      <stop offset="100%" stop-color="#FF2E9A"/>
+    </linearGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00F5FF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#00F5FF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur1"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="blur2"><feGaussianBlur stdDeviation="2"/></filter>
+  </defs>
+
+  <rect width="800" height="320" fill="url(#bg)"/>
+
+  <!-- hex grid backdrop -->
+  <g opacity="0.15" stroke="#00F5FF" stroke-width="1" fill="none">
+    <path d="M40 20 L70 5 L100 20 L100 50 L70 65 L40 50 Z"/>
+    <path d="M100 50 L130 35 L160 50 L160 80 L130 95 L100 80 Z"/>
+    <path d="M160 20 L190 5 L220 20 L220 50 L190 65 L160 50 Z"/>
+    <path d="M40 80 L70 65 L100 80 L100 110 L70 125 L40 110 Z"/>
+    <path d="M650 40 L680 25 L710 40 L710 70 L680 85 L650 70 Z"/>
+    <path d="M710 70 L740 55 L770 70 L770 100 L740 115 L710 100 Z"/>
+    <path d="M600 250 L630 235 L660 250 L660 280 L630 295 L600 280 Z"/>
+    <path d="M680 220 L710 205 L740 220 L740 250 L710 265 L680 250 Z"/>
+  </g>
+
+  <!-- floating binary / code particles -->
+  <g fill="#00F5FF" opacity="0.55" font-family="Fira Code, monospace" font-size="13">
+    <text x="55" y="180">01</text>
+    <text x="90" y="230">&lt;/&gt;</text>
+    <text x="140" y="150">10</text>
+    <text x="620" y="150">{ }</text>
+    <text x="660" y="200">01</text>
+    <text x="700" y="130">&lt;/&gt;</text>
+    <text x="30" y="260">RAG</text>
+    <text x="710" y="260">LLM</text>
+  </g>
+
+  <!-- central AI core figure -->
+  <g transform="translate(400,160)">
+    <circle r="95" fill="url(#coreGlow)" filter="url(#blur1)">
+      <animate attributeName="r" values="90;100;90" dur="3s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- outer rotating ring -->
+    <g stroke="url(#glow1)" stroke-width="2" fill="none" opacity="0.8">
+      <circle r="80" stroke-dasharray="10 8"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="18s" repeatCount="indefinite"/>
+    </g>
+    <g stroke="#FF2E9A" stroke-width="1.5" fill="none" opacity="0.6">
+      <circle r="65" stroke-dasharray="2 6"/>
+      <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="12s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- geometric head/core silhouette -->
+    <polygon points="0,-55 40,-30 40,25 0,50 -40,25 -40,-30" fill="#0D0221" stroke="url(#glow1)" stroke-width="2.5"/>
+
+    <!-- inner circuit lines -->
+    <g stroke="#00F5FF" stroke-width="1.5" fill="none" opacity="0.9">
+      <path d="M0,-55 L0,-20"/>
+      <path d="M-40,-30 L-15,-10 L-15,15"/>
+      <path d="M40,-30 L15,-10 L15,15"/>
+      <path d="M-15,15 L0,30 L15,15"/>
+      <path d="M0,30 L0,50"/>
+    </g>
+
+    <!-- glowing eyes -->
+    <circle cx="-14" cy="-8" r="5" fill="#00F5FF">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="14" cy="-8" r="5" fill="#00F5FF">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- circuit nodes -->
+    <circle cx="-15" cy="-10" r="2.5" fill="#FF2E9A"/>
+    <circle cx="15" cy="-10" r="2.5" fill="#FF2E9A"/>
+    <circle cx="0" cy="30" r="2.5" fill="#FF2E9A"/>
+    <circle cx="0" cy="-20" r="2.5" fill="#FF2E9A"/>
+  </g>
+
+  <!-- side text labels -->
+  <g font-family="Fira Code, monospace" font-size="15" fill="#00F5FF" opacity="0.85">
+    <text x="60" y="60">AI ENGINE</text>
+    <text x="600" y="60" text-anchor="end">ONLINE</text>
+  </g>
+</svg>
